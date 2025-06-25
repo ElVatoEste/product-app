@@ -35,9 +35,9 @@
                         <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-300">{{ Str::limit($product->description, 50) ?? __('products.no_description') }}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                             <div class="flex space-x-2">
-                                <a href="{{ route('products.show', $product) }}" class="text-blue-600 hover:text-blue-900">{{ __('products.view') }}</a>
-                                <a href="{{ route('products.edit', $product) }}" class="text-indigo-600 hover:text-indigo-900">{{ __('products.edit') }}</a>
-                                <form action="{{ route('products.destroy', $product) }}" method="POST" class="inline">
+                                <a href="{{ route('products.show', $product->id) }}" class="text-blue-600 hover:text-blue-900">{{ __('products.view') }}</a>
+                                <a href="{{ route('products.edit', $product->id) }}" class="text-indigo-600 hover:text-indigo-900">{{ __('products.edit') }}</a>
+                                <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="inline">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="text-red-600 hover:text-red-900" onclick="return confirm('{{ __('products.delete_confirmation') }}')">

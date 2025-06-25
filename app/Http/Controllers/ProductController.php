@@ -50,21 +50,24 @@ class ProductController extends Controller
     }
 
  
-    public function show(Product $product)
+    public function show($id)
     {
+        $product = Product::findOrFail($id);
         return view('products.show', compact('product'));
     }
 
 
-    public function edit(Product $product)
+    public function edit($id)
     {
+        $product = Product::findOrFail($id);
         $categories = Category::all();
         return view('products.edit', compact('product', 'categories'));
     }
 
 
-    public function update(Request $request, Product $product)
+    public function update(Request $request, $id)
     {
+        $product = Product::findOrFail($id);
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric|min:0.01',
@@ -89,10 +92,10 @@ class ProductController extends Controller
     }
 
 
-    public function destroy(Product $product)
+    public function destroy($id)
     {
-        $result = $product->delete();
-        dd($result);
+        $product = Product::findOrFail($id);
+        $product->delete();
         return redirect()->route('products.index')
             ->with('success', 'Producto eliminado exitosamente.');
     }
