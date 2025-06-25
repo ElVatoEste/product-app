@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'success' => 'Éxito',
+    'error' => 'Error',
+    'warning' => 'Advertencia',
+    'info' => 'Información',
+    'confirm' => 'Confirmar',
+    'yes' => 'Sí',
+    'no' => 'No',
+    'save' => 'Guardar',
+    'cancel' => 'Cancelar',
+    'edit' => 'Editar',
+    'delete' => 'Eliminar',
+    'view' => 'Ver',
+    'back' => 'Volver',
+    'create' => 'Crear',
+    'update' => 'Actualizar',
+    'search' => 'Buscar',
+    'filter' => 'Filtrar',
+    'clear' => 'Limpiar',
+    'loading' => 'Cargando...',
+    'no_data' => 'No hay datos disponibles',
+    'actions' => 'Acciones',
+    'id' => 'ID',
+    'created_at' => 'Fecha de Creación',
+    'updated_at' => 'Última Actualización',
+]; 

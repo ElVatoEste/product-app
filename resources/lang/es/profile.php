@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'title' => 'Perfil',
+    'information' => 'Información del perfil',
+    'update_information' => 'Actualiza la información de tu cuenta y correo electrónico.',
+    'name' => 'Nombre',
+    'email' => 'Correo electrónico',
+    'save' => 'Guardar',
+    'saved' => 'Guardado.',
+    'update_password' => 'Actualizar contraseña',
+    'password_advice' => 'Asegúrate de usar una contraseña larga y aleatoria para mantener tu cuenta segura.',
+    'current_password' => 'Contraseña actual',
+    'new_password' => 'Nueva contraseña',
+    'confirm_password' => 'Confirmar contraseña',
+    'delete_account' => 'Eliminar cuenta',
+    'delete_account_warning' => 'Una vez que se elimine tu cuenta, todos sus recursos y datos se eliminarán permanentemente. Antes de eliminar tu cuenta, descarga cualquier dato o información que desees conservar.',
+    'delete_account_confirm' => '¿Estás seguro de que deseas eliminar tu cuenta?',
+    'delete_account_confirm_warning' => 'Por favor, ingresa tu contraseña para confirmar que deseas eliminar tu cuenta permanentemente.',
+    'email_unverified' => 'Tu correo electrónico no está verificado.',
+    'resend_verification' => 'Haz clic aquí para reenviar el correo de verificación.',
+    'verification_sent' => 'Se ha enviado un nuevo enlace de verificación a tu correo electrónico.',
+    'cancel' => 'Cancelar',
+    'password' => 'Contraseña',
+]; 
